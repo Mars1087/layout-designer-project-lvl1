@@ -12,7 +12,7 @@
     <header class="header flex jc-sb">
         <div class="flex">
             <div class="p-10 flex ai-c">
-                <img src="images/logo.svg" alt="" width="50px">
+                <img src="images/logo.svg" alt="" width="50">
             </div>
             <div class="p-10 flex ai-c">
                 <span class="text-bold">Лунное море</span>
@@ -21,21 +21,21 @@
         <div>
                 <ul class="flex">
                     <li class="p-10 list-st-none">
-                        <a class="td-none color-303846 text-bold" href="#">Преимущества</a>
+                        <a class="td-none color-303846 text-bold" href="#second-block">Преимущества</a>
                     </li>
                     <li class="p-10 list-st-none">
-                        <a class="td-none color-303846 text-bold" href="#">О ЖК</a>
+                        <a class="td-none color-303846 text-bold" href="#first-main">О ЖК</a>
                     </li>
                     <li class="p-10 list-st-none">
-                        <a class="td-none color-303846 text-bold" href="#">Места для отдыха</a>
+                        <a class="td-none color-303846 text-bold" href="#second-main">Места для отдыха</a>
                     </li>
                 </ul>
         </div>
     </header>
     <main class="main flex fd-column ai-c">
-        <section class="first-block flex fd-column ai-c bz-bb">
+        <div class="first-block flex fd-column ai-c bz-bb">
             <div class="mt-390">
-                <img src="images/logo.svg" alt="" width="120px">
+                <img src="images/logo.svg" alt="" width="120">
             </div>
             <div class="mt-10 fs-48 color-white text-bold">
                 <span>ЖК &lsaquo;&lsaquo;Лунное морe&rsaquo;&rsaquo;</span>
@@ -43,17 +43,17 @@
             <div class="mt-8 fs-18 color-white text-bold">
                 <span>Место, откуда не хочется улетать</span>
             </div>
-            <div class="first-block_button">
-                <a class="td-none color-white" href="#">Забронировать</a>
+            <div class="first-block_button br-10 text-bold" id="second-block">
+                <a class="td-none color-white" href="#button">Забронировать</a>
             </div>
-        </section>
+        </div>
         <section class="bz-bb w-1000 mt-50">
             <div class="flex jc-sb">
                 <h2 class="fw-wrap bz-bb w-300 fs-31">Уникальный вид</h2>
                 <h2 class="fw-wrap bz-bb w-300 fs-31">Инфраструктура</h2>
                 <h2 class="fw-wrap bz-bb w-300 fs-31">Близость к Москве</h2>
             </div>
-            <div class="flex jc-sb">
+            <div class="flex jc-sb" id="first-main">
                 <span class="fw-wrap bz-bb w-300 text-center lh-25">Вид на космос из вашего окна. Мы построили дома с большими окнами, 
                     чтобы вы могли наслаждаться метеоритными потоками.
                 </span>
@@ -79,15 +79,15 @@
                         </span>
                     </div>
                 </div>
-                <div class="mt-50 mr-70">
-                    <img src="images/moon-1.jpg" alt="" width="300px" height="200px">
+                <div class="mt-50 mr-70" id="second-main">
+                    <img src="images/moon-1.jpg" alt="" width="300" height="200">
                 </div>
             </div>
         </section>
         <section class="main-content mt-10">
             <div class="m-auto w-1000 flex jc-sb">
                 <div class="mt-50 ml-70">
-                    <img src="images/moon-2.jpg" alt="" width="300px" height="200px">
+                    <img src="images/moon-2.jpg" alt="" width="300" height="200">
                 </div>
                 <div class="bz-bb w-500 mt-20 mr-70">
                     <div>
@@ -103,6 +103,60 @@
                             Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
                         </span>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-content mt-50 background-f7f7f7" id="button">
+            <div class="m-auto flex fd-column ai-c">
+                <div>
+                    <h2 class="fs-31">Оставьте заявку сегодня!</h2>
+                </div>
+                <fieldset class="w-400 border">
+                    <legend class="color-green fs-25 text-bold">Параметры квартиры</legend>
+                    <div class="flex jc-sb ai-c mt-10">
+                        <span class="text-bold">Количество комнат:</span>
+                        <form>
+                            <select class="form-select br-10">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="flex jc-sb ai-c mt-10 mb-20">
+                        <span class="text-bold">Отделка:</span>
+                        <form>
+                            <select class="form-select br-10">
+                                <option>Без отделки</option>
+                                <option>Черновая</option>
+                                <option>Чистовая</option>
+                            </select>
+                        </form>
+                    </div>
+                </fieldset>
+                <fieldset class="w-400 border mt-20">
+                    <legend class="color-green fs-25 text-bold">Контактная информация</legend>
+                    <div class="flex jc-sb ai-c mt-10">
+                        <span class="text-bold">Имя:</span>
+                        <form>
+                            <input class="form-input br-10" type="text">
+                        </form>
+                    </div>
+                    <div class="flex jc-sb ai-c mt-10">
+                        <span class="text-bold">Телефон:</span>
+                        <form>
+                            <input class="form-input br-10" type="text">
+                        </form>
+                    </div>
+                    <div class="flex jc-sb ai-c mt-10 mb-20">
+                        <span class="text-bold">E-mail:</span>
+                        <form>
+                            <input class="form-input br-10" type="text">
+                        </form>
+                    </div>
+                </fieldset>
+                <div class="main-content_button">
+                    <a class="td-none color-green text-bold" href="#">Отправить</a>
                 </div>
             </div>
         </section>
