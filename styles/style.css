@@ -80,8 +80,10 @@ body {
     margin-top: 18px;
     padding: 12px;
     border: 1px solid white;
-    border-radius: 10px;
     text-align: center;
+}
+.br-10 {
+    border-radius: 10px;
 }
 .w-1000 {
     width: 1000px; 
@@ -133,4 +135,41 @@ body {
 }
 .mt-20 {
     margin-top: 20px;
+}
+.main-content_button {
+    margin-right: 280px;
+    width: 130px;
+    margin-top: 18px;
+    padding: 12px;
+    border: 1px solid  rgb(68, 230, 181);
+    border-radius: 10px;
+    text-align: center;
+}
+.color-green {
+    color: rgb(68, 230, 181);
+}
+.w-400 {
+    width: 400px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.form-select {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid  gainsboro;
+    text-align: left;
+    margin-right: 45px;
+}
+.form-input {
+    width: 180px;
+    padding: 8px;
+    border: 1px solid gainsboro;
+    text-align: left;
+}
+.border {
+    border: 2px solid  rgb(68, 230, 181);
+}
+.mb-20 {
+    margin-bottom: 20px;
 }
